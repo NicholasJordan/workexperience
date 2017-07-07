@@ -7,10 +7,14 @@
   </head>
 
   <body>
-    <ul>
-    {% for student in studentchoice %}
-      <li>{{ student }}</li>
-    {% endfor %}
-    </ul>
+    <div>
+      <h1>Select student to view details</h1>
+    <div>
+      <ul>
+        {% for student in studentchoice %}
+        <li>{{ student }}</li>
+        {% endfor %}
+      </ul>
+    </div>
   </body>
 </html>

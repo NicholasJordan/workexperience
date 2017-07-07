@@ -4,20 +4,23 @@ from django.http import HttpResponse
 from .models import Campion, Line, Mayne, Stone
 
 def classesindex(request):
-    return HttpResponse("Classes index page placeholder. Try typing localhost:8000/classes/(form_name) to accesss placeholders for other forms")
+    return render(request, 'classes/classesindex.html')
 
 def campion(request):
     studentchoice = Campion.objects.all()
     return render(request, 'classes/campion.html', {'studentchoice': studentchoice})
 
 def line(request):
-    return HttpResponse("Line placeholder")
+    studentchoice = Line.objects.all()
+    return render(request, 'classes/line.html', {'studentchoice': studentchoice})
 
 def mayne(request):
-    return HttpResponse("Mayne placeholder")
+    studentchoice = Mayne.objects.all()
+    return render(request, 'classes/mayne.html', {'studentchoice': studentchoice})
 
 def stone(request):
-    return HttpResponse("Stone placeholder")
+    studentchoice = Stone.objects.all()
+    return render(request, 'classes/stone.html', {'studentchoice': studentchoice})
 
 def studentlist(request):
     return
