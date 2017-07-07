@@ -1,11 +1,14 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
+from .models import Campion, Line, Mayne, Stone
+
 def classesindex(request):
-    return HttpResponse("Classes index page placeholder. Try typing localhost:8000/classes/<form_name> to accesss placeholders for other forms")
+    return HttpResponse("Classes index page placeholder. Try typing localhost:8000/classes/(form_name) to accesss placeholders for other forms")
 
 def campion(request):
-    return HttpResponse("Campion placeholder")
+    studentchoice = Campion.objects.all()
+    return render(request, 'classes/campion.html', {'studentchoice': studentchoice})
 
 def line(request):
     return HttpResponse("Line placeholder")
@@ -15,3 +18,6 @@ def mayne(request):
 
 def stone(request):
     return HttpResponse("Stone placeholder")
+
+def studentlist(request):
+    return
