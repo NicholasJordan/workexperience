@@ -22,5 +22,12 @@ def stone(request):
     studentchoice = Stone.objects.all()
     return render(request, 'classes/stone.html', {'studentchoice': studentchoice})
 
-def studentlist(request):
-    return
+"""def detail(request, student_name=Campion.student):
+    campion_student = Campion.student
+    name = ''
+    location =''
+    compname =''
+    compcontact =''
+    compphone =''
+    compemail =''
+    return render(request, 'classes/detail.html')"""
