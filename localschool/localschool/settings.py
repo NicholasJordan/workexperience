@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'classes',
     'teacherapps.campiondetail',
+    'teacherapps.linedetail',
+    'teacherapps.maynedetail',
+    'teacherapps.stonedetail',
 ]
 
 MIDDLEWARE = [

@@ -7,5 +7,5 @@ from classes.models import Campion, Line, Mayne, Stone
 
 urlpatterns = [
     #url(r'^$', studentdetail, name='studentdetail'),
-    url(r'^(?P<idnum>\w+)/$', cstudentdetail, name='cstudentdetail'),
+    url(r'^(?P<idnum>\w+)/$', sstudentdetail, name='sstudentdetail'),
 ]
