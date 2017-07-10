@@ -1,6 +1,6 @@
 from django.conf.urls import url, include
 
-from .views import cstudentdetail
+from .views import sstudentdetail
 
 from classes.models import Campion, Line, Mayne, Stone
 

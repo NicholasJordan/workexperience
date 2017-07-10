@@ -9,6 +9,7 @@ urlpatterns = [
     url(r'^line/$', line, name='line'),
     url(r'^mayne/detail/', include('teacherapps.maynedetail.urls'), name='mdetail'),
     url(r'^mayne/$', mayne, name='mayne'),
+    url(r'^stone/detail/', include('teacherapps.stonedetail.urls'), name='sdetail'),
     url(r'^stone/$', stone, name='stone'),
     url(r'^$', classesindex),
 ]
