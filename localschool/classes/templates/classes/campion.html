@@ -12,7 +12,7 @@
     <div>
       <ul>
         {% for student in studentchoice %}
-        <li><a href="{% url 'campionstudent'}">{{ student }}</a></li>
+        <li><a href="{% url 'studentdetail' idnum=student.id %}">{{ student }}</a></li>
         {% endfor %}
       </ul>
     </div>

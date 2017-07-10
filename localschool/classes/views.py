@@ -8,6 +8,7 @@ def classesindex(request):
 
 def campion(request):
     studentchoice = Campion.objects.all()
+
     return render(request, 'classes/campion.html', {'studentchoice': studentchoice})
 
 def line(request):

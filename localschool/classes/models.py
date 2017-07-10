@@ -10,10 +10,11 @@ class Campion(models.Model):
     company_name = models.CharField(max_length=200, default='Not entered')
     company_contact = models.CharField(max_length=200, default='eg. Helen Stephane')
     company_phone = models.CharField(max_length=200, default='Not entered')
-    company_email = models.CharField(max_length=200, default='Not entered')
+    company_email = models.EmailField(max_length=200, default='Not entered')
 
     class Meta:
         verbose_name_plural = 'Campion'
+        ordering = ['student']
 
     def showname(self):
         def __str__(self):
@@ -31,10 +32,11 @@ class Line(models.Model):
     company_name = models.CharField(max_length=200, default='Not entered')
     company_contact = models.CharField(max_length=200, default='eg. Helen Stephane')
     company_phone = models.CharField(max_length=200, default='Not entered')
-    company_email = models.CharField(max_length=200, default='Not entered')
+    company_email = models.EmailField(max_length=200, default='Not entered')
 
     class Meta:
         verbose_name_plural = 'Line'
+        ordering = ['student']
 
     def __str__(self):
         return self.student[:50]
@@ -48,10 +50,11 @@ class Mayne(models.Model):
     company_name = models.CharField(max_length=200, default='Not entered')
     company_contact = models.CharField(max_length=200, default='eg. Helen Stephane')
     company_phone = models.CharField(max_length=200, default='Not entered')
-    company_email = models.CharField(max_length=200, default='Not entered')
+    company_email = models.EmailField(max_length=200, default='Not entered')
 
     class Meta:
         verbose_name_plural = 'Mayne'
+        ordering = ['student']
 
     def __str__(self):
         return self.student[:50]
@@ -65,10 +68,11 @@ class Stone(models.Model):
     company_name = models.CharField(max_length=200, default='Not entered')
     company_contact = models.CharField(max_length=200, default='eg. Helen Stephane')
     company_phone = models.CharField(max_length=200, default='Not entered')
-    company_email = models.CharField(max_length=200, default='Not entered')
+    company_email = models.EmailField(max_length=200, default='Not entered')
 
     class Meta:
         verbose_name_plural = 'Stone'
+        ordering = ['student']
 
     def __str__(self):
         return self.student[:50]
