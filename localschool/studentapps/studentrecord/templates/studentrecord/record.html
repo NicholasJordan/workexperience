@@ -8,10 +8,8 @@
 <body>
   <h1>Record your workexperience</h1>
   <form action="/details/" method="post">
-    <label for="work_date">Date:* </label>
-    <input id="work_date" type="date" name="work_date" required>
-    <label for="work_details" method="post">Details:* </label>
-    <textarea placeholder="Enter details here..." id="work_details" name="work_details" required=></textarea>
+    {% csrf_token %}
+    {{ form }}
     <input type="submit" value="Submit record">
   </form>
   <script>

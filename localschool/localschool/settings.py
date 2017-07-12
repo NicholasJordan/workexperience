@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'teacherapps.linedetail',
     'teacherapps.maynedetail',
     'teacherapps.stonedetail',
+    'studentapps.studentrecord',
 ]
 
 MIDDLEWARE = [
